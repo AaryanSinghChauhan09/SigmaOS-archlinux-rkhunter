@@ -3,7 +3,7 @@ name = "SigmaOS-archlinux-rkhunter"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "archlinux-rkhunter component"
+description = "SigmaOS component repository"
 upstream = []
 
 [contract]
