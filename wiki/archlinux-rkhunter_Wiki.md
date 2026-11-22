@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-archlinux-rkhunter Component Wiki
+# SigmaOS-archlinux-rkhunter Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-archlinux-rkhunter provides SigmaOS component repository for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-archlinux-rkhunter provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-archlinux-rkhunter Abstraction
-- Fail-Fast on SigmaOS-archlinux-rkhunter Initialization Errors
-- Deterministic SigmaOS-archlinux-rkhunter Setup
-- Clear Abstraction Over SigmaOS-archlinux-rkhunter APIs
-- Composition over Inheritance for SigmaOS-archlinux-rkhunter extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-archlinux-rkhunter Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-archlinux-rkhunter Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-archlinux-rkhunter Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-archlinux-rkhunter APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-archlinux-rkhunter extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-archlinux-rkhunter follows a SigmaOS-archlinux-rkhunter pattern:
+SigmaOS-archlinux-rkhunter follows a SigmaOS-archlinux-rkhunter pattern:
 - **SigmaOS-archlinux-rkhunter Core**: Provides SigmaOS-archlinux-rkhunter support, SigmaOS-archlinux-rkhunter management, and SigmaOS-archlinux-rkhunter tracking
 - **Management**: Supports SigmaOS-archlinux-rkhunter management, SigmaOS-archlinux-rkhunter configuration, and SigmaOS-archlinux-rkhunter lifecycle
 - **Tracking**: Supports SigmaOS-archlinux-rkhunter status, SigmaOS-archlinux-rkhunter tracking, and SigmaOS-archlinux-rkhunter lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-archlinux-rkhunter follows a SigmaOS-archlinux-rkhunter pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-archlinux-rkhunter by given configuration
--  - Register a SigmaOS-archlinux-rkhunter by given name
--  - Get SigmaOS-archlinux-rkhunter status and SigmaOS-archlinux-rkhunter availability
--  - Track SigmaOS-archlinux-rkhunter management and SigmaOS-archlinux-rkhunter tracking
+- Manage a SigmaOS-archlinux-rkhunter by given configuration
+- Register a SigmaOS-archlinux-rkhunter by given name
+- Get SigmaOS-archlinux-rkhunter status and SigmaOS-archlinux-rkhunter availability
+- Track SigmaOS-archlinux-rkhunter management and SigmaOS-archlinux-rkhunter tracking
 - Error types for SigmaOS-archlinux-rkhunter failure scenarios or unsupported SigmaOS-archlinux-rkhunter types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-archlinux-rkhunter init, SigmaOS-archlinux-rkhunter management)
 3. **Assert**: Verify the expected SigmaOS-archlinux-rkhunter results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-archlinux-rkhunter initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-archlinux-rkhunter failure scenarios
 - Unit tests provided for SigmaOS-archlinux-rkhunter management and configuration
